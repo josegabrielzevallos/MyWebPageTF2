@@ -24,7 +24,16 @@
             </a>
 
             <span class="spacer" aria-hidden="true"></span>
-            <ul>
+
+            <!-- Hamburger Menu Button (Mobile) -->
+            <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul id="nav-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li id="services-li">
                     <a aria-haspopup="true" aria-expanded="false" class="current">Services</a>
@@ -133,6 +142,37 @@
     <footer>
         <p>&copy; 2025 Medic Family. All rights reserved.</p>
     </footer>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+        const hamburgerBtn = document.querySelector('.hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            const isExpanded = hamburgerBtn.getAttribute('aria-expanded') === 'true';
+            hamburgerBtn.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('nav-open');
+            hamburgerBtn.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburgerBtn.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburgerBtn.setAttribute('aria-expanded', 'false');
+                navMenu.classList.remove('nav-open');
+                hamburgerBtn.classList.remove('active');
+            }
+        });
+
+        // Close menu when window is resized to tablet/desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                hamburgerBtn.setAttribute('aria-expanded', 'false');
+                navMenu.classList.remove('nav-open');
+                hamburgerBtn.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 
 </html>
