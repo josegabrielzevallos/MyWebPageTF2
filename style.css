@@ -108,7 +108,6 @@ header {
   padding: 0.5rem;
   border-bottom: 4px solid var(--secondary-color);
   position: fixed;
-  /* CRITERIA 10: Sticky positioning */
   top: 0;
   left: 0;
   right: 0;
