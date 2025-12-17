@@ -443,10 +443,7 @@ footer p {
   color: rgb(255, 255, 255);
 }
 
-/**************************************************/
-/* ---------- Additional Components (Mobile First) ---------- */
-/* ========================================================== */
-/* CRITERIA 14: CSS Keyframe Animations                       */
+                   
 /* Pulse animation for emergency banner                       */
 /* ========================================================== */
 @keyframes pulse {
@@ -463,7 +460,7 @@ footer p {
   }
 }
 
-/* CRITERIA 14: Using animation with 4+ properties */
+/*  Using animation with 4+ properties */
 #emergency-banner {
   background: #ff6b6b;
   color: var(--text-light);
@@ -474,7 +471,7 @@ footer p {
   text-align: center;
   font-weight: 600;
   font-size: 0.875rem;
-  /* CRITERIA 14: Animation properties */
+  /* Animation properties */
   animation-name: pulse;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -489,9 +486,6 @@ footer p {
 }
 
 
-/**************************************************/
-/* ========================================================== */
-/* CRITERIA 27: Responsive Image Gallery                      */
 /* ========================================================== */
 .image-gallery {
   display: grid;
@@ -518,7 +512,6 @@ footer p {
   transform: scale(1.05);
 }
 
-/* CRITERIA 15: Pseudo-element ::after for overlay */
 .gallery-item::after {
   content: '';
   position: absolute;
@@ -532,10 +525,7 @@ footer p {
   opacity: 1;
 }
 
-
-/**************************************************/
-/* ========================================================== */
-/* CRITERIA 28: FAQ Accordions                                */
+/* FAQ Accordions  */
 /* ========================================================== */
 .faq-section {
   margin: 2rem 0;
@@ -569,7 +559,6 @@ footer p {
   background: rgba(11, 114, 133, 0.05);
 }
 
-/* CRITERIA 15: Pseudo-element for accordion arrow */
 .faq-question::after {
   content: '+';
   font-size: 1.5rem;
@@ -578,7 +567,6 @@ footer p {
   transition: transform var(--transition-speed) ease;
 }
 
-/* CRITERIA 5: Advanced Selector - Attribute selector */
 .faq-item[open] .faq-question::after {
   content: '−';
 }
@@ -593,10 +581,7 @@ footer p {
 }
 
 
-/**************************************************/
-/* ========================================================== */
-/* CRITERIA 26: 404 Page Styles                               */
-/* ========================================================== */
+
 .error-page {
   min-height: 80vh;
   display: flex;
@@ -623,11 +608,7 @@ footer p {
 }
 
 
-/**************************************************/
-/* ========================================================== */
-/* HAMBURGER MENU (Mobile First)                              */
-/* ========================================================== */
-/**************************************************/
+
 
 /* Hamburger Button */
 .hamburger-btn {
@@ -738,14 +719,7 @@ nav>ul>li>a:hover {
 }
 
 
-/**************************************************/
-/**************************************************/
-/* ========================================================== */
-/* CRITERIA 12: CSS Media Queries                             */
-/* Mobile-first approach with 3 breakpoints                   */
-/* ========================================================== */
-/**************************************************/
-/**************************************************/
+
 
 /* ========== TABLET STYLES (min-width: 768px) ========== */
 @media (min-width: 768px) {
@@ -807,7 +781,6 @@ nav>ul>li>a:hover {
     padding-right: 1rem;
   }
 
-  /* Reset services menu for tablet/desktop */
   #services-menu {
     position: absolute;
     opacity: 0;
@@ -920,7 +893,6 @@ nav>ul>li>a:hover {
     padding: 0.5rem 1rem;
   }
 
-  /* CRITERIA 27: Gallery - Tablet (2 columns) */
   .image-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1014,7 +986,6 @@ nav>ul>li>a:hover {
     font-size: 1rem;
   }
 
-  /* CRITERIA 27: Gallery - Desktop (3 columns) */
   .image-gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
@@ -1037,7 +1008,6 @@ nav>ul>li>a:hover {
     justify-content: space-around;
   }
 
-  /* CRITERIA 27: Gallery - Large Desktop (4 columns) */
   .image-gallery {
     grid-template-columns: repeat(4, 1fr);
   }
