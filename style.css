@@ -107,7 +107,7 @@ header {
   color: var(--text-light);
   padding: 0.5rem;
   border-bottom: 4px solid var(--secondary-color);
-  position: sticky;
+  position: fixed;
   /* CRITERIA 10: Sticky positioning */
   top: 0;
   left: 0;
@@ -172,7 +172,6 @@ nav a.current {
 /* ========================================================== */
 #services-li {
   position: relative;
-  /* CRITERIA 9: Creates positioning context */
 }
 
 /* ========================================================== */
@@ -182,7 +181,6 @@ nav a.current {
 /* CRITERIA 13: CSS Transitions for smooth animations         */
 #services-menu {
   position: absolute;
-  /* CRITERIA 8: Absolute positioning */
   top: calc(100% + 0.625rem);
   left: 50%;
   transform: translateX(-50%) translateY(-6px);
@@ -237,6 +235,7 @@ nav a.current {
 /* ---------- Main Section (Mobile First) ---------- */
 main {
   padding: 1rem;
+  padding-top:11rem;
   margin: 0 auto;
   background-color: rgba(248, 249, 250, 0.88);
 }
@@ -833,6 +832,7 @@ nav>ul>li>a:hover {
   /* Main - Tablet */
   main {
     padding: 1.5rem;
+    padding-top: 11rem;
   }
 
   .hero {
@@ -945,6 +945,7 @@ nav>ul>li>a:hover {
   /* Main - Desktop */
   main {
     padding: 2rem;
+    padding-top: 11rem;
   }
 
   .hero {
