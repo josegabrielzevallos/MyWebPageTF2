@@ -45,7 +45,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-dark);
   line-height: 1.6;
-  background: linear-gradient(rgba(11, 114, 133, 0.75), rgba(55, 178, 77, 0.75)), url(./images/img-background.jpg);
+  background: linear-gradient(rgba(11, 114, 133, 0.75), rgba(55, 178, 77, 0.75)), url(./images/img-background.webp) no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -276,7 +276,7 @@ main {
   border: 2px solid transparent;
   font-weight: 700;
   font-size: clamp(0.875rem, 2vw, 1rem);
-  /* CRITERIA 13: Transition for hover effect */
+
   transition: transform 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out,
     background-color 0.2s ease-in-out;
@@ -605,6 +605,7 @@ footer p {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+  padding-top:11rem;
 }
 
 .error-code {
