@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ============================================================ -->
+    <!-- CRITERIA 26: 404 Page Not Found                              -->
+    <!-- This page should be served when a user visits a non-existent -->
+    <!-- URL. Configure your server to serve this file for 404 errors -->
+    <!-- ============================================================ -->
+    <title>404 - Page Not Found | Medic Family</title>
+    <!-- CRITERIA 29: CSS Library - Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- CRITERIA 20: Semantic Section Markup - header -->
+    <header>
+        <p id="emergency-banner">2025 - Emergency Line: (01) 555-911</p>
+
+        <!-- CRITERIA 21: Semantic Content Markup - nav -->
+        <nav aria-label="Main Navigation">
+            <a href="index.html">
+                <h1 class="header-title">Medic Family</h1>
+            </a>
+
+            <span class="spacer" aria-hidden="true"></span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="services-li">
+                    <a aria-haspopup="true" aria-expanded="false">Services</a>
+                    <ul id="services-menu" aria-label="submenu">
+                        <li><a href="./pages/services.html">Doc. Service</a></li>
+                        <li><a href="#">Examinations</a></li>
+                        <li><a href="#">Medicines</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CRITERIA 20: Semantic Section Markup - main -->
+    <main class="error-page">
+        <!-- CRITERIA 22: Heading Structure - h1 already in header, h2 here -->
+        <!-- CRITERIA 19: Responsive Typography with clamp() -->
+        <p class="error-code">404</p>
+        <h2 class="error-message">Oops! Page Not Found</h2>
+        <p>
+            The page you're looking for doesn't exist or has been moved.<br>
+            Don't worry, let's get you back on track.
+        </p>
+        <div class="hero-actions" style="justify-content: center; margin-top: 2rem;">
+            <a class="button-primary" href="index.html">Go to Homepage</a>
+            <a class="button-secondary" href="./pages/contact.html">Contact Us</a>
+        </div>
+    </main>
+
+    <!-- CRITERIA 20: Semantic Section Markup - footer -->
+    <footer>
+        <p>&copy; 2025 Medic Family. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
