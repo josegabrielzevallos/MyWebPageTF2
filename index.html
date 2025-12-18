@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medic Family | Preventive Health</title>
     <!--CSS Library - Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -62,14 +65,20 @@
                 </p>
                 <div class="hero-actions">
                     <a class="button-primary" href="./pages/services.html">Schedule Your Checkup</a>
-                    <a class="button-secondary" href="./pages/contact.html">Let's Talk</a>
+                    <a class="button-secondary animate__zoomInUp" href="./pages/contact.html">Let's Talk</a>
                 </div>
             </div>
-      
-            <figure class="hero-img">
+            <picture class="hero-img">
+
+                <source srcset="./images/img-home-small.webp" media="(max-width: 767px)"> 
+
+                <img src="./images/img-home.webp" alt="Medical team providing care to a patient" loading="lazy">
+
+            </picture>
+            <!-- <figure class="hero-img">
                 <img src="./images/img-home.webp" alt="Medical team providing care to a patient" loading="lazy">
                 <figcaption class="visually-hidden">Our dedicated medical team at work</figcaption>
-            </figure>
+            </figure> -->
 
         </section>
 
